@@ -136,20 +136,20 @@
 
                    <div class="d-flex w-100 align-items-center">
 
-  <div class="ml-3 mt-2 text-white">
-    <h5 class="font-weight-bold mb-0">
-      🌿 Aravalli Forest EMS
-    </h5>
-    <small style="opacity:0.8;">
-      Real-Time Environmental Monitoring Dashboard
-    </small>
-  </div>
+                      <div class="ml-3 mt-2 text-white">
+                         <h5 class="font-weight-bold mb-0">
+                             🌿 Aravalli Forest EMS
+                         </h5>
+                          <small style="opacity:0.8;">
+                             Real-Time Environmental Monitoring Dashboard
+                          </small>
+                      </div>
 
-  <div class="ml-auto mr-4 text-white">
-    <span id="currentDate"></span>
-  </div>
+              <div class="ml-auto mr-4 text-white">
+                  <span id="currentDate"></span>
+              </div>
 
-</div>
+         </div>
                 </nav>
                 <!-- End of Topbar -->
 
@@ -544,6 +544,11 @@
     <!-- Page level custom scripts -->
     <script src="js/demo/chart-area-demo.js"></script>
     <script src="js/demo/chart-pie-demo.js"></script>
+    <script>
+  const date = new Date();
+  document.getElementById("currentDate").innerText =
+    date.toDateString();
+</script>
 
 </body>
 
