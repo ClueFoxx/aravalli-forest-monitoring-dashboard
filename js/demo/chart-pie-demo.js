@@ -27,9 +27,16 @@ var myPieChart = new Chart(ctx, {
       displayColors: false,
       caretPadding: 10,
     },
-    legend: {
-      display: false
-    },
+   legend: {
+    display: true,
+    position: 'bottom',
+    labels: {
+        fontColor: '#2e8b57',
+        fontSize: 13,
+        padding: 20
+    }
+},
+
     cutoutPercentage: 80,
   },
 });
