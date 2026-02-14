@@ -27,28 +27,30 @@ function number_format(number, decimals, dec_point, thousands_sep) {
   return s.join(dec);
 }
 
-// Area Chart Example
 var ctx = document.getElementById("myAreaChart");
 var myLineChart = new Chart(ctx, {
   type: 'line',
   data: {
-    labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+    labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", 
+             "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
     datasets: [{
-      label: "Earnings",
-      lineTension: 0.3,
-      backgroundColor: "rgba(78, 115, 223, 0.05)",
-      borderColor: "rgba(78, 115, 223, 1)",
-      pointRadius: 3,
-      pointBackgroundColor: "rgba(78, 115, 223, 1)",
-      pointBorderColor: "rgba(78, 115, 223, 1)",
-      pointHoverRadius: 3,
-      pointHoverBackgroundColor: "rgba(78, 115, 223, 1)",
-      pointHoverBorderColor: "rgba(78, 115, 223, 1)",
+      label: "Forest Fire Risk Index",
+      lineTension: 0.5,
+     backgroundColor: "rgba(46, 139, 87, 0.15)",
+      borderColor: "#2e8b57",
+      pointRadius: 4,
+      pointBackgroundColor: "#2e8b57",
+      pointBorderColor: "#ffffff",
+      pointHoverRadius: 6,
+      pointHoverBackgroundColor: "#14532d",
+      pointHoverBorderColor: "#ffffff",
       pointHitRadius: 10,
       pointBorderWidth: 2,
-      data: [0, 10000, 5000, 15000, 10000, 20000, 15000, 25000, 20000, 30000, 25000, 40000],
+      data: [15, 18, 25, 40, 60, 75, 55, 45, 30, 20, 18, 12],
     }],
   },
+});
+
   options: {
     maintainAspectRatio: false,
     layout: {
@@ -61,9 +63,6 @@ var myLineChart = new Chart(ctx, {
     },
     scales: {
       xAxes: [{
-        time: {
-          unit: 'date'
-        },
         gridLines: {
           display: false,
           drawBorder: false
@@ -73,14 +72,17 @@ var myLineChart = new Chart(ctx, {
         }
       }],
       yAxes: [{
+         scaleLabel: {
+        display: true,
+        labelString: 'Fire Risk Index'
+    },
         ticks: {
           maxTicksLimit: 5,
           padding: 10,
           // Include a dollar sign in the ticks
-          callback: function(value, index, values) {
-            return '$' + number_format(value);
-          }
-        },
+          callback: function(value) {
+            return value;
+          },
         gridLines: {
           color: "rgb(234, 236, 244)",
           zeroLineColor: "rgb(234, 236, 244)",
