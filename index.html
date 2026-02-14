@@ -257,8 +257,8 @@
                     <div class="text-xs font-weight-bold text-success text-uppercase mb-1">
                         Temperature (°C)
                     </div>
-                    <div class="h5 mb-0 font-weight-bold text-gray-800">
-                        <span id="tempValue">--</span>
+                   <div id="temperatureValue" class="h5 mb-0 font-weight-bold text-gray-800">--</div>
+                      <span id="tempValue">--</span>
                     </div>
                 </div>
                 <div class="col-auto">
@@ -593,7 +593,14 @@
 document.getElementById("fireAlerts").innerText =
     Math.floor(Math.random() * 5);
 </script>
-
+ <script> // Demo Temperature Update
+function updateTemperature() {
+  const temp = (25 + Math.random() * 10).toFixed(1); // random demo value
+  document.getElementById("temperatureValue").innerText = temp + " °C";
+}
+updateTemperature();
+setInterval(updateTemperature, 5000);
+</script>
 </body>
 
 </html>
