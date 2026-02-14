@@ -21,6 +21,36 @@
     <link href="css/sb-admin-2.min.css" rel="stylesheet">
 
 </head>
+<style>
+.sidebar .nav-link {
+  color:  #0b3d2e !important;
+  font-weight: 500;
+}
+
+.sidebar .nav-link {
+    color: #0b3d2e !important;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.sidebar .nav-link:hover {
+    background: linear-gradient(90deg, #d8f3dc, #b7e4c7);
+    color: #1b4332 !important;
+    border-radius: 12px;
+    transform: translateX(6px);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+.sidebar-heading {
+  color: #2d6a4f !important;
+  font-weight: bold;
+}
+
+.sidebar-brand-text {
+  color: #1b4332 !important;
+  font-weight: bold;
+}
+</style>
 
 <body id="page-top">
 
@@ -28,7 +58,9 @@
     <div id="wrapper">
 
         <!-- Sidebar -->
-        <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+      <ul class="navbar-nav sidebar sidebar-light accordion" id="accordionSidebar"
+            style="background: linear-gradient(180deg, #e9f5ec, #b7e4c7, #52b788);">
+
 
             <!-- Sidebar - Brand -->
             <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
