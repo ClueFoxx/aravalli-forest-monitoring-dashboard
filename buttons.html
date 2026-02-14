@@ -501,6 +501,32 @@
     <!-- Custom scripts for all pages-->
     <script src="js/sb-admin-2.min.js"></script>
 
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js"></script>
+    <script>
+var ctx = document.getElementById("temperatureChart");
+
+new Chart(ctx, {
+    type: 'line',
+    data: {
+        labels: ["Mon","Tue","Wed","Thu","Fri","Sat","Sun"],
+        datasets: [{
+            label: "Temperature (°C)",
+            data: [28, 30, 32, 35, 33, 38, 34],
+            backgroundColor: "rgba(45, 106, 79, 0.2)",
+            borderColor: "#2d6a4f",
+            borderWidth: 3,
+            fill: true,
+            pointRadius: 4
+        }]
+    },
+    options: {
+        responsive: true,
+        maintainAspectRatio: false
+    }
+});
+</script>
+
+
 </body>
 
 </html>
