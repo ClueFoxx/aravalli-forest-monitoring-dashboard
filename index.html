@@ -302,7 +302,8 @@
                      <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i
                                 class="fas fa-download fa-sm text-white-50"></i> Generate Report</a>
                     </div>
-                  
+
+                   
 <div class="row">
 
     <!-- Temperature -->
@@ -403,9 +404,9 @@
 
 
 <!-- Aravalli Region Map Section -->
-<div id="aravalli-map-section" class="d-none">
-    <h2 class="mt-4">Aravalli Region Map</h2>
-    <div id="map" style="height: 500px; width: 100%; border-radius:10px;"></div>
+<div id="aravalli-map-section" style="display:none;">
+    <h2>Aravalli Region Map</h2>
+    <div id="map" style="height:500px;"></div>
 </div>
 
                     <!-- Content Row -->
@@ -707,31 +708,42 @@ lottie.loadAnimation({
 });
 </script>
 
-            <script>
-let mapInitialized = false;
+           <script>
+document.addEventListener("DOMContentLoaded", function () {
 
-function showMap() {
+    let mapInitialized = false;
 
-    // Show map section
-    document.getElementById("aravalli-map-section").classList.remove("d-none");
+    window.showMap = function () {
 
-    // Initialize map only once
-    if (!mapInitialized) {
-        var map = L.map('map').setView([27.2, 75.8], 8); // Aravalli coordinates
+        const section = document.getElementById("aravalli-map-section");
 
-        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-            attribution: '© OpenStreetMap contributors'
-        }).addTo(map);
+        if (!section) {
+            console.log("Map section not found!");
+            return;
+        }
 
-        // Example marker
-        L.marker([27.2, 75.8]).addTo(map)
-            .bindPopup("Aravalli Region")
-            .openPopup();
+        section.style.display = "block";
 
-        mapInitialized = true;
-    }
-}
+        if (!mapInitialized) {
+
+            var map = L.map('map').setView([27.2, 75.8], 8);
+
+            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                attribution: '© OpenStreetMap contributors'
+            }).addTo(map);
+
+            L.marker([27.2, 75.8])
+                .addTo(map)
+                .bindPopup("Aravalli Region")
+                .openPopup();
+
+            mapInitialized = true;
+        }
+    };
+
+});
 </script>
+
 
 </body>
 
