@@ -21,53 +21,57 @@
     <link href="css/sb-admin-2.min.css" rel="stylesheet">
 
 </head>
+
+    
 <style>
-.sidebar .nav-link {
-  color:  #0b3d2e !important;
-  font-weight: 500;
+
+/* ===== YOUR CUSTOM DESIGN STARTS HERE ===== */
+
+.sidebar {
+    background: linear-gradient(180deg, #d8f3dc, #b7e4c7);
+    box-shadow: 4px 0 20px rgba(0,0,0,0.05);
 }
 
 .sidebar .nav-link {
     color: #0b3d2e !important;
-    font-weight: 500;
     transition: all 0.3s ease;
 }
 
 .sidebar .nav-link:hover {
     background: linear-gradient(90deg, #d8f3dc, #b7e4c7);
-    color: #1b4332 !important;
     border-radius: 12px;
     transform: translateX(6px);
-    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
 }
 
-    .sidebar .nav-item.active .nav-link {
-    background: linear-gradient(90deg, #95d5b2, #74c69d);
-    color: #ffffff !important;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+/* Rounded cards */
+.card {
+    border-radius: 18px !important;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.06);
 }
 
-    
-.sidebar-heading {
-  color: #2d6a4f !important;
-  font-weight: bold;
+/* Topbar gradient */
+.topbar {
+    background: linear-gradient(90deg, #2d6a4f, #40916c) !important;
+    color: white !important;
 }
 
-.sidebar-brand-text {
-  color: #1b4332 !important;
-  font-weight: bold;
-}
+/* ===== YOUR CUSTOM DESIGN ENDS HERE ===== */
+
 </style>
 
+
 <body id="page-top">
+    
+    <div class="leaf"></div>
+   <div class="leaf leaf2"></div>
+   <div class="leaf leaf3"></div>
+
 
     <!-- Page Wrapper -->
     <div id="wrapper">
 
         <!-- Sidebar -->
       <ul class="navbar-nav sidebar sidebar-light accordion" id="accordionSidebar"
-            style="background: linear-gradient(180deg, #e9f5ec, #b7e4c7, #52b788);">
 
 
             <!-- Sidebar - Brand -->
