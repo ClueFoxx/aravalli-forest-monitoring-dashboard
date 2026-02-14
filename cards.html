@@ -414,6 +414,32 @@
     </div>
 
 </div>
+                <div class="col-xl-3 col-md-6 mb-4">
+    <div class="card border-left-danger shadow h-100 py-2">
+        <div class="card-body">
+            <div class="row no-gutters align-items-center">
+
+                <div class="col mr-2">
+                    <div class="text-xs font-weight-bold text-danger text-uppercase mb-1">
+                        Air Quality Index
+                    </div>
+
+                    <!-- 👇 ADD THIS HERE -->
+                    <div class="h2 mb-0 font-weight-bold text-gray-800">
+                        <span id="aqiValue">Loading...</span>
+                    </div>
+
+                </div>
+
+                <div class="col-auto">
+                    <i class="fas fa-wind fa-2x text-gray-300"></i>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
 
                 <!-- /.container-fluid -->
 
@@ -502,6 +528,22 @@ if (ctx) {
     }
   });
 }
+</script>
+<script>
+fetch("https://api.waqi.info/feed/gurgaon/?token=437a5363eae278cbafe3ffd5f2c35b7a630a4446")
+.then(response => response.json())
+.then(data => {
+
+    if(data.status === "ok") {
+
+        let aqi = data.data.aqi;
+
+        document.getElementById("aqiValue").innerText = aqi;
+
+        console.log("AQI:", aqi);
+    }
+
+});
 </script>
 
 </body>
