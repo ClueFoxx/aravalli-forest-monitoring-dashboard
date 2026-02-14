@@ -355,6 +355,24 @@
 
     </div>
 
+                 <div class="row mb-4">
+    <div class="col-lg-4">
+        <div class="card shadow border-left-danger">
+            <div class="card-body text-center">
+                <h6 class="font-weight-bold text-danger mb-3">
+                    🌡 Live Temperature Sensor
+                </h6>
+
+                <div id="tempAnimation" style="height:200px;"></div>
+
+                <p class="small text-muted mt-2">
+                    Real-time sensor simulation
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
     <!-- Temperature Chart -->
     <div class="card shadow mb-4">
         <div class="card-header py-3">
@@ -450,6 +468,16 @@ new Chart(ctx, {
         responsive: true,
         maintainAspectRatio: false
     }
+});
+</script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.12.2/lottie.min.js"></script>
+<script>
+lottie.loadAnimation({
+    container: document.getElementById('tempAnimation'),
+    renderer: 'svg',
+    loop: true,
+    autoplay: true,
+    path: 'https://assets2.lottiefiles.com/packages/lf20_jcikwtux.json'
 });
 </script>
 
