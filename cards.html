@@ -300,19 +300,32 @@
     <div class="row">
 
         <!-- Current AQI -->
-        <div class="col-xl-4 col-md-6 mb-4">
-            <div class="card border-left-success shadow h-100 py-2">
-                <div class="card-body">
-                    <div class="text-xs font-weight-bold text-success text-uppercase mb-1">
-                        Current AQI
+       <div class="col-xl-3 col-md-6 mb-4">
+    <div class="card border-left-danger shadow h-100 py-2">
+        <div class="card-body">
+            <div class="row no-gutters align-items-center">
+
+                <div class="col mr-2">
+                    <div class="text-xs font-weight-bold text-danger text-uppercase mb-1">
+                        Air Quality Index
                     </div>
-                    <div class="h4 mb-0 font-weight-bold text-gray-800" id="currentAQI">
-                        92
+
+                    <!-- 👇 ADD THIS HERE -->
+                    <div class="h2 mb-0 font-weight-bold text-gray-800">
+                        <span id="aqiValue">Loading...</span>
                     </div>
-                    <small class="text-success">Moderate Air Quality</small>
+
                 </div>
+
+                <div class="col-auto">
+                    <i class="fas fa-wind fa-2x text-gray-300"></i>
+                </div>
+
             </div>
         </div>
+    </div>
+</div>
+
 
         <!-- PM2.5 -->
         <div class="col-xl-4 col-md-6 mb-4">
@@ -414,32 +427,7 @@
     </div>
 
 </div>
-                <div class="col-xl-3 col-md-6 mb-4">
-    <div class="card border-left-danger shadow h-100 py-2">
-        <div class="card-body">
-            <div class="row no-gutters align-items-center">
-
-                <div class="col mr-2">
-                    <div class="text-xs font-weight-bold text-danger text-uppercase mb-1">
-                        Air Quality Index
-                    </div>
-
-                    <!-- 👇 ADD THIS HERE -->
-                    <div class="h2 mb-0 font-weight-bold text-gray-800">
-                        <span id="aqiValue">Loading...</span>
-                    </div>
-
-                </div>
-
-                <div class="col-auto">
-                    <i class="fas fa-wind fa-2x text-gray-300"></i>
-                </div>
-
-            </div>
-        </div>
-    </div>
-</div>
-
+               
 
                 <!-- /.container-fluid -->
 
