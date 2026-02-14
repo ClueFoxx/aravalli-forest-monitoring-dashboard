@@ -26,76 +26,40 @@ function number_format(number, decimals, dec_point, thousands_sep) {
   }
   return s.join(dec);
 }
-
 var ctx = document.getElementById("myAreaChart");
+
 var myLineChart = new Chart(ctx, {
   type: 'line',
   data: {
-    labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", 
-             "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+    labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun"],
     datasets: [{
       label: "Forest Fire Risk Index",
-      lineTension: 0.5,
-     backgroundColor: "rgba(46, 139, 87, 0.15)",
-      borderColor: "#2e8b57",
+      lineTension: 0.3,
+      backgroundColor: "rgba(40, 167, 69, 0.2)",
+      borderColor: "#28a745",
       pointRadius: 4,
-      pointBackgroundColor: "#2e8b57",
-      pointBorderColor: "#ffffff",
+      pointBackgroundColor: "#28a745",
+      pointBorderColor: "#fff",
       pointHoverRadius: 6,
-      pointHoverBackgroundColor: "#14532d",
-      pointHoverBorderColor: "#ffffff",
-      pointHitRadius: 10,
-      pointBorderWidth: 2,
-      data: [15, 18, 25, 40, 60, 75, 55, 45, 30, 20, 18, 12],
-    }],
+      data: [12, 19, 25, 30, 22, 35]
+    }]
   },
-});
-
   options: {
     maintainAspectRatio: false,
-    layout: {
-      padding: {
-        left: 10,
-        right: 25,
-        top: 25,
-        bottom: 0
-      }
-    },
     scales: {
-      xAxes: [{
-        gridLines: {
-          display: false,
-          drawBorder: false
-        },
-        ticks: {
-          maxTicksLimit: 7
-        }
-      }],
       yAxes: [{
-         scaleLabel: {
-        display: true,
-        labelString: 'Fire Risk Index'
-    },
         ticks: {
-          maxTicksLimit: 5,
-          padding: 10,
-          // Include a dollar sign in the ticks
-          callback: function(value) {
-            return value;
-          },
-        gridLines: {
-          color: "rgb(234, 236, 244)",
-          zeroLineColor: "rgb(234, 236, 244)",
-          drawBorder: false,
-          borderDash: [2],
-          zeroLineBorderDash: [2]
+          beginAtZero: true
         }
-      }],
+      }]
     },
     legend: {
-      display: false
-    },
-    tooltips: {
+      display: true
+    }
+  }
+});
+  
+tooltips: {
       backgroundColor: "rgb(255,255,255)",
       bodyFontColor: "#858796",
       titleMarginBottom: 10,
