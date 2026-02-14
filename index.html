@@ -418,21 +418,31 @@
                             <!-- Illustrations -->
                             <div class="card shadow mb-4">
                                 <div class="card-header py-3">
-                                    <h6 class="m-0 font-weight-bold text-primary">Illustrations</h6>
+                                    <h6 class="m-0 font-weight-bold text-primary">Forest Surveillance System</h6>
                                 </div>
-                                <div class="card-body">
-                                    <div class="text-center">
-                                        <img class="img-fluid px-3 px-sm-4 mt-3 mb-4" style="width: 25rem;"
-                                            src="img/undraw_posting_photo.svg" alt="...">
-                                    </div>
-                                    <p>Add some quality, svg illustrations to your project courtesy of <a
-                                            target="_blank" rel="nofollow" href="https://undraw.co/">unDraw</a>, a
-                                        constantly updated collection of beautiful svg images that you can use
-                                        completely free and without attribution!</p>
-                                    <a target="_blank" rel="nofollow" href="https://undraw.co/">Browse Illustrations on
-                                        unDraw &rarr;</a>
-                                </div>
-                            </div>
+                               <div class="card-body">
+
+   <div class="text-center mb-4">
+    <div id="forestAnimation"
+         style="width: 320px; height: 320px; margin: auto;">
+    </div>
+</div>
+
+    <p class="mb-3">
+        The Aravalli Forest EMS monitors temperature, humidity,
+        soil moisture, and fire risk levels in real-time.
+        AI-based alerts help prevent wildfire outbreaks
+        and protect biodiversity.
+    </p>
+
+    <ul class="small">
+        <li>🌡 Real-time temperature tracking</li>
+        <li>🔥 Fire risk detection system</li>
+        <li>🌱 Soil & vegetation health analysis</li>
+        <li>📡 Remote environmental sensors</li>
+    </ul>
+
+</div>
 
                             <!-- Approach -->
                             <div class="card shadow mb-4">
@@ -540,6 +550,19 @@ function updateTemperature() {
 updateTemperature();
 setInterval(updateTemperature, 5000);
 </script>
+
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.10.2/lottie.min.js"></script>
+
+<script>
+lottie.loadAnimation({
+  container: document.getElementById('forestAnimation'),
+  renderer: 'svg',
+  loop: true,
+  autoplay: true,
+  path: 'img/forest.json'   // change if needed
+});
+</script>
+
 </body>
 
 </html>
