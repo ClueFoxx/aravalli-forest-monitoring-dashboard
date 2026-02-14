@@ -487,6 +487,28 @@ new Chart(ctx, {
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.9.6/lottie.min.js"></script>
 
+  <!-- Your AQI Chart Script -->
+<script>
+var ctx = document.getElementById("airQualityChart");
+if (ctx) {
+  new Chart(ctx, {
+    type: 'line',
+    data: {
+      labels: ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"],
+      datasets: [{
+        label: "AQI Level",
+        data: [85, 92, 110, 140, 125, 100, 90],
+        backgroundColor: "rgba(32, 201, 151, 0.2)",
+        borderColor: "#20c997",
+        pointRadius: 4
+      }]
+    },
+    options: {
+      maintainAspectRatio: false
+    }
+  });
+}
+</script>
 <script>
 lottie.loadAnimation({
     container: document.getElementById('tempAnimation'),
