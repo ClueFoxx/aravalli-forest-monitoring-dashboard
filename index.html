@@ -20,6 +20,12 @@
         href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
         rel="stylesheet">
 
+    <!-- Leaflet CSS -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+
+<!-- Leaflet JS -->
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
     <!-- Custom styles for this template-->
     <link href="css/sb-admin-2.min.css" rel="stylesheet">
 
@@ -218,8 +224,8 @@
             <hr class="sidebar-divider">
 
            <li class="nav-item">
-    <a class="nav-link active" href="#">
-        <i class="fas fa-map-marker-alt"></i>
+   <a class="nav-link" href="#" onclick="showMap()">
+       <i class="fas fa-map-marker-alt"></i>
         <span>Aravalli Region Map</span>
     </a>
 </li>
@@ -396,6 +402,11 @@
 </div>
 
 
+<!-- Aravalli Region Map Section -->
+<div id="aravalli-map-section" class="d-none">
+    <h2 class="mt-4">Aravalli Region Map</h2>
+    <div id="map" style="height: 500px; width: 100%; border-radius:10px;"></div>
+</div>
 
                     <!-- Content Row -->
 
@@ -694,6 +705,32 @@ lottie.loadAnimation({
   autoplay: true,
   path: 'img/forest.json'   // change if needed
 });
+</script>
+
+            <script>
+let mapInitialized = false;
+
+function showMap() {
+
+    // Show map section
+    document.getElementById("aravalli-map-section").classList.remove("d-none");
+
+    // Initialize map only once
+    if (!mapInitialized) {
+        var map = L.map('map').setView([27.2, 75.8], 8); // Aravalli coordinates
+
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '© OpenStreetMap contributors'
+        }).addTo(map);
+
+        // Example marker
+        L.marker([27.2, 75.8]).addTo(map)
+            .bindPopup("Aravalli Region")
+            .openPopup();
+
+        mapInitialized = true;
+    }
+}
 </script>
 
 </body>
