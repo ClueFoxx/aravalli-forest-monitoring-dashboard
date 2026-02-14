@@ -89,6 +89,35 @@
 }
 
 /* ===== YOUR CUSTOM DESIGN ENDS HERE ===== */
+.hero-video-container {
+    position: relative;
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+}
+
+.hero-video-container video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-overlay {
+    position: absolute;
+    bottom: 40px;
+    left: 50px;
+    color: white;
+    background: rgba(0,0,0,0.4);
+    padding: 20px 30px;
+    border-radius: 12px;
+}
+
+.hero-overlay h2 {
+    margin: 0;
+    font-weight: 700;
+}
 
 </style>
 
@@ -244,7 +273,7 @@
                                <!-- 🌿 Full Width Hero Video -->
 <div class="hero-video-container mb-4">
     <video autoplay muted loop playsinline>
-        <source src="img/forest.mp4" type="video/mp4">
+        <source src="img/aravali.mp4" type="video/mp4">
     </video>
 
     <div class="hero-overlay">
