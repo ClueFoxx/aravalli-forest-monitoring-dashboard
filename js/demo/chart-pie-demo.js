@@ -4,7 +4,7 @@ Chart.defaults.global.defaultFontColor = '#858796';
 
 // Pie Chart Example
 var ctx = document.getElementById("fireRiskChart");
-var myPieChart = new Chart(ctx, {
+var fireRiskChart = new Chart(ctx, {
   type: 'doughnut',
   data: {
    labels: ["Low Risk", "Moderate Risk", "High Risk"],
