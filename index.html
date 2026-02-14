@@ -67,6 +67,23 @@
     background: linear-gradient(90deg, #2d6a4f, #40916c) !important;
     color: white !important;
 }
+ .sidebar-brand-icon i {
+    font-size: 28px;
+    color: #14532d;
+    animation: floatTree 3s ease-in-out infinite;
+}
+
+@keyframes floatTree {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-4px); }
+    100% { transform: translateY(0px); }
+}
+
+.sidebar-brand-text {
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #0b3d2e !important;
+}
 
 /* ===== YOUR CUSTOM DESIGN ENDS HERE ===== */
 
@@ -88,11 +105,16 @@
 
 
             <!-- Sidebar - Brand -->
+          
             <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
-                <div class="sidebar-brand-icon rotate-n-15">
-                    <i class="fas fa-leaf"></i>
-                </div>
-                <div class="sidebar-brand-text mx-3">ARAVALLI <sup>EMS</sup></div>
+
+                    <div class="sidebar-brand-icon">
+                       <i class="fas fa-tree"></i>
+                    </div>
+
+                 <div class="sidebar-brand-text mx-2">
+                     ARAVALLI <sup>EMS</sup>
+                   </div>
             </a>
 
             <!-- Divider -->
