@@ -26,6 +26,8 @@ function number_format(number, decimals, dec_point, thousands_sep) {
   }
   return s.join(dec);
 }
+// Area Chart Example
+
 var ctx = document.getElementById("myAreaChart");
 
 var myLineChart = new Chart(ctx, {
@@ -55,11 +57,8 @@ var myLineChart = new Chart(ctx, {
     },
     legend: {
       display: true
-    }
-  }
-});
-  
-tooltips: {
+    },
+    tooltips: {
       backgroundColor: "rgb(255,255,255)",
       bodyFontColor: "#858796",
       titleMarginBottom: 10,
@@ -71,14 +70,7 @@ tooltips: {
       yPadding: 15,
       displayColors: false,
       intersect: false,
-      mode: 'index',
-      caretPadding: 10,
-      callbacks: {
-        label: function(tooltipItem, chart) {
-          var datasetLabel = chart.datasets[tooltipItem.datasetIndex].label || '';
-          return datasetLabel + ': $' + number_format(tooltipItem.yLabel);
-        }
-      }
+      mode: 'index'
     }
   }
 });
