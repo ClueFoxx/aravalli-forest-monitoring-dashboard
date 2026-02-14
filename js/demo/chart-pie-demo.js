@@ -27,10 +27,7 @@ var myPieChart = new Chart(ctx, {
       backgroundColor: "rgb(255,255,255)",
       bodyFontColor: "#858796",
       borderColor: '#dddfeb',
-      borderWidth: 1,
+      borderWidth: 1
     }
   }
 });
-
-
-   
