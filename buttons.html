@@ -481,6 +481,43 @@ new Chart(ctx, {
 <!-- jQuery Easing CDN -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
 
+  <!-- 3️⃣ Chart.js -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js"></script>
+
+<!-- 4️⃣ Your Chart Script -->
+<script>
+var ctx = document.getElementById("airQualityChart").getContext('2d');
+
+var airQualityChart = new Chart(ctx, {
+    type: 'line',
+    data: {
+        labels: ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"],
+        datasets: [{
+            label: "AQI Level",
+            data: [85, 92, 110, 140, 125, 100, 90],
+            backgroundColor: "rgba(46, 204, 113, 0.2)",
+            borderColor: "#2ecc71",
+            borderWidth: 3,
+            pointBackgroundColor: "#2ecc71",
+            fill: true
+        }]
+    },
+    options: {
+        maintainAspectRatio: false,
+        responsive: true,
+        legend: {
+            display: true
+        },
+        scales: {
+            yAxes: [{
+                ticks: {
+                    beginAtZero: false
+                }
+            }]
+        }
+    }
+});
+</script>
 <!-- SB Admin -->
 <script src="js/sb-admin-2.min.js"></script>
 
