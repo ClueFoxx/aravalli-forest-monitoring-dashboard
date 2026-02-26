@@ -102,11 +102,12 @@ This enables faster response and better forest conservation.
 git clone https://github.com/your-username/aravalli-environmental-monitoring-dashboard.git
 cd aravalli-environmental-monitoring-dashboard
 ```
-👨‍💻 Team Members
-Rohan Singh
-Alok Yadav
-Abhinav Sahai Kamthan
-Uday Chahar
+## 👨‍💻 Team Members
+- Rohan singh
+- Alok yadav
+- Abhinav sahai kamthan
+- Uday Chahar 
+ 
 
 📄 License
 This project is developed for educational and environmental conservation purposes.
