@@ -1,6 +1,6 @@
 # 🌿 Aravalli Environmental Monitoring Dashboard  
 ## 🛰️ Smart Forest Protection System using IoT & Satellite Data  
-### 🎓 College Minor Project
+### 🎓 College Minor Project..
 
 A real-time environmental monitoring system developed as a **college minor project** to protect the Aravalli Hills from deforestation, pollution, illegal mining, and forest fires.
 
