@@ -21,7 +21,7 @@ Due to lack of continuous monitoring, these issues are detected too late, causin
 
 ---
 
-## 💡 Our Solution..
+## 💡 Our Solution
 
 We built a **Smart Environmental Monitoring Dashboard** that:
 
