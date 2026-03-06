@@ -35,7 +35,7 @@ This enables faster response and better forest conservation.
 
 ---
 
-## 🛠️ Tech Stack
+## 🛠️ Tech Stacks
 
 ### Frontend.
 - HTML  
