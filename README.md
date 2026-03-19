@@ -96,7 +96,7 @@ This enables faster response and better forest conservation.
 
 ---
 
-## 🚀 How to Run Locally
+## 🚀 How to Run Locally..
 
 ```bash
 git clone https://github.com/your-username/aravalli-environmental-monitoring-dashboard.git
