@@ -6,7 +6,7 @@ A real-time environmental monitoring system developed as a **college minor proje
 
 ---
 
-## 🚨 Problem Statement..
+## 🚨 Problem Statement
 
 The Aravalli Hills are facing:
 
