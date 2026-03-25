@@ -60,8 +60,7 @@ This enables faster response and better forest conservation.
 
 - ✅ Real-time Air & Water Quality Monitoring  
 - ✅ Forest Fire Early Warning System  
-- ✅ Deforestation Detection  
-- ✅ Illegal Mining Activity Tracking  
+- ✅ Deforestation Detection   
 - ✅ Interactive Data Visualization Dashboard  
 - ✅ Alert Generation System  
 
