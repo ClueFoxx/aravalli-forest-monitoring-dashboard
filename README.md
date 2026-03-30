@@ -6,7 +6,7 @@ A real-time environmental monitoring system developed as a **college minor proje
 
 ---
 
-## 🚨 Problem Statement..
+## 🚨 Problem Statement
 
 The Aravalli Hills are facing:
 
@@ -21,7 +21,7 @@ Due to lack of continuous monitoring, these issues are detected too late, causin
 
 ---
 
-## 💡 Our Solution..
+## 💡 Our Solution
 
 We built a **Smart Environmental Monitoring Dashboard** that:
 
