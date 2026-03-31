@@ -52,7 +52,7 @@ This enables faster response and better forest conservation.
 - Environmental APIs  
 
 ### Deployment
-- Netlify  
+- Netlify/Vercel
 
 ---
 
